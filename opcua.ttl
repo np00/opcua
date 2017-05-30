@@ -133,8 +133,8 @@ opcua:Measurement a owl:Class;
 
 
 opcua:overflowMeasurement a owl:Class;
-	rdfs:label "Measurement of "@en ;
-    rdfs:comment "Measurement of a OPC UA sensor at a given time."@en  ;
+	rdfs:label "overflow Measurement "@en ;
+    rdfs:comment "Measurement of overflows."@en  ;
     rdfs:isDefinedBy opcua: ;
     dct:created "2017-05-30"^^xsd:date ;
     dct:modified "2017-05-30"^^xsd:date ;
