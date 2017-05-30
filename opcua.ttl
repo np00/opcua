@@ -1,0 +1,137 @@
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct:    <http://purl.org/dc/terms/> .
+@prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann:   <http://purl.org/vocab/vann/> .
+@prefix void:   <http://rdfs.org/ns/void#> .
+@prefix vs:     <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix doap:   <http://usefulinc.com/ns/doap#> .
+@prefix schema: <http://schema.org/> .
+@prefix opcua:  <http://iais.fraunhofer/opcua/>
+
+opcua:Sensor a owl:Class;
+	rdfs:label "OPC UA Sensor"@en;
+    rdfs:comment "A sensor defined by OPC UA."@en  ;
+    rdfs:isDefinedBy opcua: ;
+    dct:created "2017-05-30"^^xsd:date ;
+    dct:modified "2017-05-30"^^xsd:date ;
+    owl:versionInfo "SNAPSHOT" ;
+    vs:term_status "testing" ;
+    .	
+
+opcua:SensorOverflow 
+	rdfs:subClassOf opcua:Sensor;
+	rdfs:label "OPC UA Overflow Sensor"@en;
+    rdfs:comment "A OPC UA sensor for measuring if something of overflown."@en  ;
+    rdfs:isDefinedBy opcua: ;
+    dct:created "2017-05-30"^^xsd:date ;
+    dct:modified "2017-05-30"^^xsd:date ;
+    owl:versionInfo "SNAPSHOT" ;
+    vs:term_status "testing" ;
+    .	
+
+opcua:SensorOverHeat 
+	rdfs:subClassOf opcua:Sensor;
+	rdfs:label "OPC UA Overheat Sensor"@en;
+    rdfs:comment "A OPC UA sensor for measuring if something is overheated."@en  ;
+    rdfs:isDefinedBy opcua: ;
+    dct:created "2017-05-30"^^xsd:date ;
+    dct:modified "2017-05-30"^^xsd:date ;
+    owl:versionInfo "SNAPSHOT" ;
+    vs:term_status "testing" ;
+    .	
+
+opcua:SensorUndercool 
+	rdfs:subClassOf opcua:Sensor;
+	rdfs:label "OPC UA Undercool Sensor"@en;
+    rdfs:comment "A OPC UA sensor for measuring if something is undercooled."@en  ;
+    rdfs:isDefinedBy opcua: ;
+    dct:created "2017-05-30"^^xsd:date ;
+    dct:modified "2017-05-30"^^xsd:date ;
+    owl:versionInfo "SNAPSHOT" ;
+    vs:term_status "testing" ;
+    .	
+
+opcua:SensorColor 
+	rdfs:subClassOf opcua:Sensor;
+	rdfs:label "OPC UA Color Sensor"@en;
+    rdfs:comment "A OPC UA sensor for measuring the color."@en  ;
+    rdfs:isDefinedBy opcua: ;
+    dct:created "2017-05-30"^^xsd:date ;
+    dct:modified "2017-05-30"^^xsd:date ;
+    owl:versionInfo "SNAPSHOT" ;
+    vs:term_status "testing" ;
+    .	
+
+opcua:SensorFillLevel 
+	rdfs:subClassOf opcua:Sensor;
+	rdfs:label "OPC UA Overfill Sensor"@en;
+    rdfs:comment "A OPC UA sensor for measuring the fill level."@en  ;
+    rdfs:isDefinedBy opcua: ;
+    dct:created "2017-05-30"^^xsd:date ;
+    dct:modified "2017-05-30"^^xsd:date ;
+    owl:versionInfo "SNAPSHOT" ;
+    vs:term_status "testing" ;
+    .	
+
+opcua:SensorTemperature 
+	rdfs:subClassOf opcua:Sensor;
+	rdfs:label "OPC UA Temperature Sensor"@en;
+    rdfs:comment "A OPC UA sensor for measuring the temperature."@en  ;
+    rdfs:isDefinedBy opcua: ;
+    dct:created "2017-05-30"^^xsd:date ;
+    dct:modified "2017-05-30"^^xsd:date ;
+    owl:versionInfo "SNAPSHOT" ;
+    vs:term_status "testing" ;
+    .	
+
+opcua:SensorRotationPmin 
+	rdfs:subClassOf opcua:Sensor;
+	rdfs:label "OPC UA Rotation per Minute Sensor"@en;
+    rdfs:comment "A OPC UA sensor for measuring the rotations per minute."@en  ;
+    rdfs:isDefinedBy opcua: ;
+    dct:created "2017-05-30"^^xsd:date ;
+    dct:modified "2017-05-30"^^xsd:date ;
+    owl:versionInfo "SNAPSHOT" ;
+    vs:term_status "testing" ;
+    .	
+
+opcua:SensorFlowRate 
+	rdfs:subClassOf opcua:Sensor;
+	rdfs:label "OPC UA Flowrate Sensor"@en;
+    rdfs:comment "A OPC UA sensor for measuring the flow rate."@en  ;
+    rdfs:isDefinedBy opcua: ;
+    dct:created "2017-05-30"^^xsd:date ;
+    dct:modified "2017-05-30"^^xsd:date ;
+    owl:versionInfo "SNAPSHOT" ;
+    vs:term_status "testing" ;
+    .
+
+
+## Measurement
+
+opcua:measurement 
+    a owl:DatatypeProperty ;
+    rdfs:comment "The EN identifier of a EN Steel Grade Classification"@en  ;
+    rdfs:label "EN Steel ID"@en ;
+    rdfs:domain opcua:Sensor ;
+    rdfs:range  opcua:Measurement ;
+    rdfs:isDefinedBy opcua: ;
+    vs:term_status "testing" ;
+    dct:modified "2016-11-22"^^xsd:date ;
+.
+
+opcua:Measurement a owl:Class;
+	rdfs:label "Measurement"@en ;
+    rdfs:comment "Measurement of a OPC UA sensor at a given time."@en  ;
+    rdfs:isDefinedBy opcua: ;
+    dct:created "2017-05-30"^^xsd:date ;
+    dct:modified "2017-05-30"^^xsd:date ;
+    owl:versionInfo "SNAPSHOT" ;
+    vs:term_status "testing" ;
+    .
+
+
+
