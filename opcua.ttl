@@ -9,7 +9,7 @@
 @prefix vs:     <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 @prefix doap:   <http://usefulinc.com/ns/doap#> .
 @prefix schema: <http://schema.org/> .
-@prefix opcua:  <http://iais.fraunhofer/opcua/>
+@prefix opcua:  <http://iais.fraunhofer/opcua/> .
 
 opcua:Sensor a owl:Class;
 	rdfs:label "OPC UA Sensor"@en;
@@ -109,18 +109,16 @@ opcua:SensorFlowRate
     vs:term_status "testing" ;
     .
 
-
 ## Measurement
-
 opcua:measurement 
-    a owl:DatatypeProperty ;
-    rdfs:comment "The EN identifier of a EN Steel Grade Classification"@en  ;
-    rdfs:label "EN Steel ID"@en ;
+    a owl:ObjectProperty ;
+    rdfs:comment "measurement of a OPC UA Sensor"@en  ;
+    rdfs:label "measurement"@en ;
     rdfs:domain opcua:Sensor ;
     rdfs:range  opcua:Measurement ;
     rdfs:isDefinedBy opcua: ;
     vs:term_status "testing" ;
-    dct:modified "2016-11-22"^^xsd:date ;
+    dct:modified "201⁷-05-30"^^xsd:date ;
 .
 
 opcua:Measurement a owl:Class;
@@ -132,6 +130,20 @@ opcua:Measurement a owl:Class;
     owl:versionInfo "SNAPSHOT" ;
     vs:term_status "testing" ;
     .
+
+
+opcua:overflowMeasurement a owl:Class;
+	rdfs:label "Measurement of "@en ;
+    rdfs:comment "Measurement of a OPC UA sensor at a given time."@en  ;
+    rdfs:isDefinedBy opcua: ;
+    dct:created "2017-05-30"^^xsd:date ;
+    dct:modified "2017-05-30"^^xsd:date ;
+    owl:versionInfo "SNAPSHOT" ;
+    vs:term_status "testing" ;
+    .
+
+
+
 
 
 
