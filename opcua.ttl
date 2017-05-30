@@ -21,7 +21,7 @@ opcua:Sensor a owl:Class;
     vs:term_status "testing" ;
     .	
 
-opcua:SensorOverflow 
+opcua:SensorOverflow a owl:Class;
 	rdfs:subClassOf opcua:Sensor;
 	rdfs:label "OPC UA Overflow Sensor"@en;
     rdfs:comment "A OPC UA sensor for measuring if something of overflown."@en  ;
@@ -32,7 +32,7 @@ opcua:SensorOverflow
     vs:term_status "testing" ;
     .	
 
-opcua:SensorOverHeat 
+opcua:SensorOverHeat a owl:Class;
 	rdfs:subClassOf opcua:Sensor;
 	rdfs:label "OPC UA Overheat Sensor"@en;
     rdfs:comment "A OPC UA sensor for measuring if something is overheated."@en  ;
@@ -43,7 +43,7 @@ opcua:SensorOverHeat
     vs:term_status "testing" ;
     .	
 
-opcua:SensorUndercool 
+opcua:SensorUndercool a owl:Class;
 	rdfs:subClassOf opcua:Sensor;
 	rdfs:label "OPC UA Undercool Sensor"@en;
     rdfs:comment "A OPC UA sensor for measuring if something is undercooled."@en  ;
@@ -54,7 +54,7 @@ opcua:SensorUndercool
     vs:term_status "testing" ;
     .	
 
-opcua:SensorColor 
+opcua:SensorColor a owl:Class;
 	rdfs:subClassOf opcua:Sensor;
 	rdfs:label "OPC UA Color Sensor"@en;
     rdfs:comment "A OPC UA sensor for measuring the color."@en  ;
@@ -65,7 +65,7 @@ opcua:SensorColor
     vs:term_status "testing" ;
     .	
 
-opcua:SensorFillLevel 
+opcua:SensorFillLevel a owl:Class;
 	rdfs:subClassOf opcua:Sensor;
 	rdfs:label "OPC UA Overfill Sensor"@en;
     rdfs:comment "A OPC UA sensor for measuring the fill level."@en  ;
@@ -76,7 +76,7 @@ opcua:SensorFillLevel
     vs:term_status "testing" ;
     .	
 
-opcua:SensorTemperature 
+opcua:SensorTemperature a owl:Class;
 	rdfs:subClassOf opcua:Sensor;
 	rdfs:label "OPC UA Temperature Sensor"@en;
     rdfs:comment "A OPC UA sensor for measuring the temperature."@en  ;
@@ -87,7 +87,7 @@ opcua:SensorTemperature
     vs:term_status "testing" ;
     .	
 
-opcua:SensorRotationPmin 
+opcua:SensorRotationPmin a owl:Class;
 	rdfs:subClassOf opcua:Sensor;
 	rdfs:label "OPC UA Rotation per Minute Sensor"@en;
     rdfs:comment "A OPC UA sensor for measuring the rotations per minute."@en  ;
@@ -98,7 +98,7 @@ opcua:SensorRotationPmin
     vs:term_status "testing" ;
     .	
 
-opcua:SensorFlowRate 
+opcua:SensorFlowRate a owl:Class;
 	rdfs:subClassOf opcua:Sensor;
 	rdfs:label "OPC UA Flowrate Sensor"@en;
     rdfs:comment "A OPC UA sensor for measuring the flow rate."@en  ;
